@@ -1,0 +1,392 @@
+
+/* common css */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+.container{
+    width:1100px;
+    margin: 0 auto;
+}
+ul{
+    list-style-type: none;
+}
+.text-center{
+    text-align: center;
+}
+body{
+}
+/* common css end */
+
+
+
+/* header part style start */
+.header_bg{
+    background: url(img/images/front-page/front-page-header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+   
+}
+    /* header nav and logo css */
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+    margin-top: 30px;
+}
+nav ul{
+    display: flex;
+    width:60%;
+    justify-content: space-between;
+    margin-top: 10px;
+    }
+    nav ul li{}
+    nav ul li a{
+        padding:4px 10px;
+        color:white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    /* header nav and logo css end */
+
+    /* header hero section css start */
+    .hero_section{
+      
+        position: absolute;
+       top:55%;
+       left:50%;
+       transform: translate(-50%,-50%);
+       color: white;
+    }
+    .hero_section h1{
+        font-size:40px;
+        margin: 20px 0;
+    }
+    .hero_section h1 .yellow{
+        color:yellow;
+    }
+    .hero_section p{
+        text-transform:capitalize;
+    } 
+    .hero_button_container{
+        margin-top: 30px;
+    }
+    .hero_button_container  .btn{
+        padding:10px 30px;
+        border:1px solid white;
+        margin-left: 10px;
+    }
+    /* header hero section css end */
+
+/* header part style end */
+
+/* project section design start */
+.project_bg{
+    background: #ddd;
+}
+.project_header{
+    padding:50px 0
+}
+.project_header p{
+    line-height: 2;
+}
+
+.projects_img{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:0 25px;
+}
+.projects_img .box{
+    height: 300px;
+    width: 300px;
+}
+.projects_img img{
+    height: 100%;
+    width: 100%;
+}
+/* project section design end */
+
+/* testimonial part css start */
+.testimonial_bg{
+    background:linear-gradient(to top, #4c0b43,#731d3a);
+}
+.testimonial{
+    width: 65%;
+    margin:0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.testimonial h1{
+    margin-top: 20px;
+    padding:20px 0;
+    color:white;
+}
+.testimonial .client{
+    margin-top:10px;
+}
+.testimonial .client img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.p_box{
+   
+    margin: 30px 0;
+    color:white;
+    background: #7b3379;
+    
+     clip-path: polygon(0% 0%,100% 0%,100% 80%,52% 80%,50% 100%,48% 80%,0% 80%);
+}
+.p_box p{
+    padding:30px 40px;
+    margin-bottom: 15px;
+}
+.testimonial h5{
+    margin-top: -15px;
+    padding-bottom:20px;
+    color:white;
+}
+.testimonial ul{
+    width:5%;
+    list-style-type:circle;
+    font-size: 30px;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+/* testimonial part css end */
+
+/* survice section css start */
+
+.survices_header{
+    padding-top:25px;
+}
+.survices_header p{
+    line-height: 2;
+    text-transform: none;
+}
+.survice img{
+    display: block;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+}
+.survices{
+    padding:30px 0;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+}
+.survice{
+    width:300px
+}
+.survice h4{
+    margin-top: 20px;
+}
+.survice p{
+    line-height: 1.5;
+    text-transform: none;
+    margin-top: 10px;
+}
+
+/* survice section css end */
+
+/* start news section css */
+.bg_news{
+    background: #ddd;
+    padding-bottom:60px;
+    width: 100%;
+}
+.news_header{
+    padding:30px 0;
+}
+.news_header p{
+    line-height: 2;
+}
+.news_header .btn{
+    margin-top: 30px;
+}
+.news_header .btn a{
+    padding:10px 30px;
+    background: #bfbf19;
+    color:white;
+    font-weight: bold;
+}
+.news_boxs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+.news_box{
+    width: 300px;
+    justify-self: center;
+    background: white;
+}
+.news_write{
+    padding:5px 15px;
+}
+.news_box img{
+    width: 100%;
+    height: auto;
+}
+
+.news_box h4{
+    line-height: 3;
+    text-transform: none;
+}
+.news_box p{
+    line-height:1.5;
+    text-transform: none;
+}
+/* end news section css */
+
+/* projects number section design start */
+
+.numbers{
+    padding:40px 0;
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    text-align: center;
+    gap:3px;
+    background: url(img/images/testiomnials-background.jpg);
+    color:white;
+    line-height: 1.5;
+}
+.num{
+    padding:20px 0;
+}
+.numbers .client{
+    border-right: 3px solid rgb(247, 244, 244);
+    border-left: 3px solid rgb(252, 249, 249);
+}
+/* projects number section design end */
+
+
+/* teem section design start */
+
+
+.mambers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    
+}
+
+    
+.member{
+    width: 300px;
+    justify-self: center;
+    display:flex;
+    align-items: center;
+    padding: 30px 0;
+    line-height: 1.5;
+    
+    
+}
+.member .details{
+   margin-left: 30px;
+}
+.member .details h4,h6,p{
+    text-transform: none;
+     
+}
+.member .details p{
+    font-size: 14px;
+}
+.member img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.bgteem{
+    padding: 50px 0;
+}
+
+.bgteem h1{
+    line-height: 1.6;
+}
+/* teem section design end */
+
+/* contuct us section desing start */
+.bg_contuctus{
+    background: rgb(216, 111, 13);
+    padding:30px 0;
+}
+.contuct_header{
+    padding: 10px 0;
+    color:white;
+    line-height: 1.5;
+}
+.sent_texts{
+    width:80%;
+    margin:25px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 45px auto;
+    grid-gap:20px;
+    height: 300px;
+}
+.massege{
+    align-self: start;
+    height: 100%;
+    
+}
+
+.same input{
+    width:100%;
+   
+    padding:10px;
+    border:none;
+    outline: none;
+    border-radius: 6px;
+}
+textarea{
+    grid-column:1/4;
+    border:none;
+    border-radius: 6px;
+    outline: none;
+    padding:20px;
+
+}
+.btn{
+    grid-column: 3/4;
+    margin-top:10px;
+    justify-self: end;
+}
+.btn a{
+    padding:10px 50px;
+    background: white;
+    border-radius: 5px;
+}
+/* contuct us design section design end */
+
+/* contuct_bottom design start */
+.contuct_bottom{
+    background: #ddd;
+}
+  .wrpaer{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      padding:40px 0;
+  } 
+.wrpaer ul{
+list-style: disc;
+ line-height: 1.4;
+}
+/* contuct_bottom design start */
